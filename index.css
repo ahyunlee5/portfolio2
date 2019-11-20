@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+}
+header {
+    position: relative;
+
+    float: left;
+    background: #121212;
+    height: 100vh;
+    max-width: 25%;
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.name {
+    position: absolute;
+    color: #F2F2F2;
+    transform: rotate(-90deg);
+    font-size: 80px;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #AAAAAA;
+    height: 33.33vh;
+    max-width: 100%;
+    width: auto;
+    text-align: center
+}
+.info:hover {
+    background: #421014;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #BDBDBD;
+    height: 33.33vh;
+    max-width: 100%;
+    width: auto;
+    text-align: center
+}
+.projects:hover {
+    background: #571F29;
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D2D2D2;
+    height: 33.33vh;
+    max-width: 100%;
+    width: auto;
+    text-align: center
+}
+.contacts:hover {
+    background: #782F30;
+}
+footer {
+    background: #F2F2F2;
+}
+.label {
+    color: #121212;
+    font-size: 80px;
+    justify-content: center;
+}
+.restLabel {
+    font-size: 30px;
+    padding: 5px;
+}
