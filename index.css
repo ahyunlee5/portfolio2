@@ -19,9 +19,10 @@ header {
     color: white;
 }
 main {
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .name {
     color: #F2F2F2;
@@ -34,16 +35,32 @@ main {
     justify-content: center;
     align-items: center;
     background: #AAAAAA;
+    max-height: 66.66vh;
     height: 33.33vh;
     max-width: 100%;
-    width: auto;
-    text-align: center
+    width: 100%;
+    text-align: center;
+
+
+    transition: height 2s;
 }
 .info:hover {
     background: #421014;
+    height: 50vh;
 }
 .info:hover .label {
     color: white;
+}
+.infoContent {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 10px;
+
+    transition: height 2s;
+}
+.info:hover .infoContent {
+    color: white;
+    height: 50vh;
 }
 .projects {
     display: flex;
@@ -52,13 +69,21 @@ main {
     background: #BDBDBD;
     height: 33.33vh;
     max-width: 100%;
-    width: auto;
-    text-align: center
+    width: 100%;
+    text-align: center;
+
+    transition: height 2s;
+
+    overflow: scroll;
 }
 .projects:hover {
     background: #571F29;
+    height: 50vh;
 }
 .projects:hover .label {
+    color: white;
+}
+.projects:hover .projectsContent {
     color: white;
 }
 .contacts {
@@ -68,11 +93,14 @@ main {
     background: #D2D2D2;
     height: 33.33vh;
     max-width: 100%;
-    width: auto;
-    text-align: center
+    width: 100%;
+    text-align: center;
+
+    transition: height 2s;
 }
 .contacts:hover {
     background: #782F30;
+    height: 50vh;
 }
 .contacts:hover .label {
     color: white;
