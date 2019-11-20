@@ -3,13 +3,20 @@
     font-family: 'Staatliches', cursive;
 }
 header {
-    position: relative;
-
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
     float: left;
     background: #121212;
     height: 100vh;
     max-width: 25%;
     width: 100%;
+}
+.back {
+    position: absolute;
+    top:0;
+    right: 0;
+    color: white;
 }
 main {
     display: flex;
@@ -17,10 +24,10 @@ main {
     justify-content: space-evenly;
 }
 .name {
-    position: absolute;
     color: #F2F2F2;
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
     font-size: 80px;
+    padding-left: 10px;
 }
 .info {
     display: flex;
@@ -35,6 +42,9 @@ main {
 .info:hover {
     background: #421014;
 }
+.info:hover .label {
+    color: white;
+}
 .projects {
     display: flex;
     justify-content: center;
@@ -47,6 +57,9 @@ main {
 }
 .projects:hover {
     background: #571F29;
+}
+.projects:hover .label {
+    color: white;
 }
 .contacts {
     display: flex;
@@ -61,6 +74,9 @@ main {
 .contacts:hover {
     background: #782F30;
 }
+.contacts:hover .label {
+    color: white;
+}
 footer {
     background: #F2F2F2;
 }
@@ -72,4 +88,8 @@ footer {
 .restLabel {
     font-size: 30px;
     padding: 5px;
+}
+
+.hidden {
+    display: none;
 }
