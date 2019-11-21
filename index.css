@@ -26,9 +26,9 @@ main {
 }
 .name {
     color: #F2F2F2;
-    /* transform: rotate(-90deg); */
-    font-size: 80px;
+    font-size: 6vw;
     padding-left: 10px;
+    padding-bottom: 5px;
 }
 .info {
     display: flex;
@@ -42,7 +42,7 @@ main {
     text-align: center;
 
 
-    transition: height 2s;
+    transition: height .1s;
 }
 .info:hover {
     background: #421014;
@@ -51,19 +51,22 @@ main {
 .info:hover .label {
     color: white;
 }
+.info:hover .infoContent {
+    color: white;
+    height: 50vh;
+}
+.info:hover ~ .projects.projectsContent {
+    visibility: hidden;
+}
 .infoContent {
     font-size: 24px;
     line-height: 24px;
     padding: 10px;
 
-    transition: height 2s;
-}
-.info:hover .infoContent {
-    color: white;
-    height: 50vh;
+    transition: height .1s;
 }
 .projects {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     background: #BDBDBD;
@@ -72,23 +75,56 @@ main {
     width: 100%;
     text-align: center;
 
-    transition: height 2s;
-
+    transition: height .1s;
     overflow: scroll;
+}
+.quizImg {
+    max-width: 18vw;
+    width: auto;
+}
+.yourDestination {
+    max-width: 18vw;
+    width: auto;
+}
+.projectDestination {
+    font-size: 20px;
+    padding: 5px;
+    line-height: 20px;
+}
+.destinationLivePage {
+    color: white;
+}
+.projectQuiz {
+    font-size: 20px;
+    padding: 5px;
+    line-height: 20px;
+}
+.githubLink {
+    color: white;
+}
+.githubLink:hover {
+    color: orange;
+}
+.quizLivePage {
+    color: white;
+}
+.quizLivePage:hover {
+    color: orange;
 }
 .projects:hover {
     background: #571F29;
-    height: 50vh;
+    height: 60vh;
 }
 .projects:hover .label {
     color: white;
 }
 .projects:hover .projectsContent {
     color: white;
+    position: relative;
 }
 .contacts {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: #D2D2D2;
     height: 33.33vh;
@@ -96,13 +132,22 @@ main {
     width: 100%;
     text-align: center;
 
-    transition: height 2s;
+    transition: height .1s;
+}
+.contactInfo {
+    display: inline-flex;
+}
+.contactIcon {
+    width: 5vw;
 }
 .contacts:hover {
     background: #782F30;
     height: 50vh;
 }
 .contacts:hover .label {
+    color: white;
+}
+.contacts:hover .contactsContent {
     color: white;
 }
 footer {
@@ -119,5 +164,5 @@ footer {
 }
 
 .hidden {
-    display: none;
+    display: none;;
 }
